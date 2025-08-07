@@ -1,5 +1,5 @@
 {
-  "name": "foundersdk",
+  "name": "buildbase",
   "version": "0.1.0",
   "description": "Complete toolkit for Indian startup founders",
   "private": true,
@@ -35,9 +35,12 @@
     "@types/node": "^20.10.5",
     "@types/react": "^18.2.45",
     "@types/react-dom": "^18.2.18",
+    "autoprefixer": "^10.4.16",
     "eslint": "^8.56.0",
     "eslint-config-next": "14.0.4",
+    "postcss": "^8.4.32",
     "prisma": "^5.7.0",
+    "tailwindcss": "^3.3.6",
     "tsx": "^4.6.2",
     "typescript": "^5.3.3"
   },
@@ -49,14 +52,14 @@
     "compliance",
     "entrepreneurship"
   ],
-  "author": "FounderSDK Team",
+  "author": "BuildBase Team",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/YOUR_USERNAME/founderSDK.git"
+    "url": "https://github.com/YOUR_USERNAME/buildbase.git"
   },
   "bugs": {
-    "url": "https://github.com/YOUR_USERNAME/founderSDK/issues"
+    "url": "https://github.com/YOUR_USERNAME/buildbase/issues"
   },
-  "homepage": "https://foundersdk.com"
+  "homepage": "https://buildbase.com"
 }
