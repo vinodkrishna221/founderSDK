@@ -1,13 +1,13 @@
 # Project Structure
 
-## Founder's Compass Architecture
+## BuilderBase Architecture
 
-This project follows a Next.js full-stack application structure optimized for the Indian startup ecosystem platform.
+This project follows a Next.js full-stack application structure with Supabase backend, optimized for the Indian startup ecosystem platform with Digital India theme integration.
 
 ## Folder Structure
 
 ```
-founders-compass/
+builderbase/
 ├── .kiro/                     # Kiro configuration and steering
 │   └── steering/             # AI assistant guidance documents
 ├── src/
@@ -17,12 +17,14 @@ founders-compass/
 │   │   ├── learning/        # Learning path pages
 │   │   ├── resources/       # Template and resource pages
 │   │   ├── community/       # Forum and Q&A pages
-│   │   ├── schemes/         # Government scheme pages
+│   │   ├── schemes/         # Government scheme navigator pages
+│   │   ├── toolkit/        # Founder's toolkit pages
 │   │   ├── api/             # API routes
 │   │   │   ├── auth/        # Authentication endpoints
 │   │   │   ├── users/       # User management
 │   │   │   ├── content/     # Content management
-│   │   │   ├── schemes/     # Government schemes API
+│   │   │   ├── schemes/     # Government scheme navigator API
+│   │   │   ├── toolkit/    # Founder's toolkit API
 │   │   │   └── payments/    # Payment processing
 │   │   └── globals.css      # Global styles
 │   ├── components/          # Reusable UI components
@@ -31,13 +33,16 @@ founders-compass/
 │   │   ├── layout/         # Layout components (header, footer)
 │   │   ├── learning/       # Learning-specific components
 │   │   ├── dashboard/      # Dashboard components
+│   │   ├── toolkit/        # Founder's toolkit components
+│   │   ├── government-navigator/ # Government scheme navigator components
 │   │   └── community/      # Community/forum components
 │   ├── lib/                # Utility libraries
 │   │   ├── auth.ts         # Authentication configuration
-│   │   ├── db.ts           # Database connection
+│   │   ├── supabase.ts     # Supabase client configuration
 │   │   ├── payments.ts     # Payment gateway integration
 │   │   ├── utils.ts        # General utilities
-│   │   └── validations.ts  # Form validation schemas
+│   │   ├── validations.ts  # Form validation schemas
+│   │   └── government-data.ts # Government data access utilities
 │   ├── hooks/              # Custom React hooks
 │   ├── types/              # TypeScript type definitions
 │   │   ├── auth.ts         # Authentication types
@@ -46,25 +51,27 @@ founders-compass/
 │   │   └── user.ts         # User-related types
 │   ├── data/               # Static data and configurations
 │   │   ├── states.ts       # Indian states and cities data
-│   │   ├── schemes/        # Government scheme templates
+│   │   ├── curated-schemes/ # Manually curated government schemes
+│   │   ├── templates/      # Founder's toolkit templates metadata
 │   │   └── industries.ts   # Industry classifications
 │   └── styles/             # Additional styling
 ├── public/                 # Static assets
 │   ├── templates/          # Downloadable templates (PDF, Excel)
 │   ├── images/            # Images and icons
 │   └── docs/              # Static documentation files
-├── prisma/                # Database schema and migrations
-│   ├── schema.prisma      # Database schema
+├── supabase/              # Supabase configuration and migrations
 │   ├── migrations/        # Database migrations
-│   └── seed.ts           # Database seeding
+│   ├── seed.sql          # Database seeding
+│   └── config.toml       # Supabase configuration
 ├── content/               # CMS content (if using file-based CMS)
 │   ├── learning-paths/    # Learning module content
 │   ├── knowledge-base/    # Wiki articles
 │   ├── case-studies/      # Startup case studies
 │   └── templates/         # Template descriptions
 ├── scripts/               # Automation scripts
-│   ├── update-schemes.ts  # Government scheme data updates
-│   ├── sync-policies.ts   # State policy synchronization
+│   ├── update-curated-schemes.ts # Manual scheme curation updates
+│   ├── sync-government-data.ts   # Government API and RSS synchronization
+│   ├── scrape-government-portals.ts # Web scraping for scheme data
 │   └── content-migration.ts # Content management scripts
 ├── tests/                 # Test files
 │   ├── __mocks__/         # Test mocks
@@ -79,18 +86,16 @@ founders-compass/
 
 ## Feature-Based Organization
 
-### Core Features Structure
+### Core Features Structure (Module-Based)
 ```
 src/components/
-├── learning-paths/        # Learning path components
-├── government-schemes/    # Scheme locator components
-├── resource-library/      # Template and resource components
-├── compliance-checker/    # Compliance checklist components
-├── funding-database/      # Funding-related components
-├── community-forum/       # Forum and Q&A components
-├── case-studies/         # Case study components
-├── expert-directory/     # Expert listing components
-└── dashboard/            # User dashboard components
+├── knowledge-core/        # Module 1: Learning paths, knowledge base, case studies
+├── user-dashboard/        # Module 2: Personalized dashboard and progress tracking
+├── founders-toolkit/      # Module 3: Templates, checklists, simulator
+├── government-navigator/  # Module 4: Scheme locator, policy comparison, application tracking
+├── community-forum/       # Additional: Forum and Q&A components
+├── expert-directory/      # Additional: Expert listing components
+└── shared/               # Shared components across modules
 ```
 
 ## File Naming Conventions
@@ -153,8 +158,8 @@ src/components/
 ```
 
 ### Required Environment Variables
-- Database connections
+- Supabase configuration (URL, anon key, service role key)
 - Payment gateway credentials (Razorpay, etc.)
-- Authentication providers
-- External API keys (government data sources)
+- Authentication providers (Google, GitHub)
+- External API keys (Data.gov.in API key for government schemes)
 - CDN and storage configurations

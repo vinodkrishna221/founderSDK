@@ -2,50 +2,94 @@
 
 ## Overview
 
-This design outlines the enhancement of visual mockups in `.kiro/steering/ui-mockups.md` to provide comprehensive, detailed, and implementable design specifications for the Founder's Compass platform. The enhanced mockups will serve as the single source of truth for UI implementation, covering all major user flows, component states, and responsive behaviors.
+This design document outlines the comprehensive enhancement of visual mockups in `.kiro/steering/ui-mockups.md` by implementing the Digital India Startup theme for BuilderBase. The enhanced mockups will serve as the definitive visual design system, providing pixel-perfect implementation guidance, detailed component specifications, animation guidelines, and responsive design patterns that embody the Digital India initiative while maintaining modern startup aesthetics.
+
+The design integrates Deep Blue (#1565C0) and Digital India Orange (#FF6B35) as primary colors, creating a professional yet culturally relevant design system that addresses all requirements for Indian entrepreneurs across different tiers of cities.
 
 ## Architecture
 
-### Mockup Organization Structure
+### Digital India Theme Mockup Structure
 
 ```
-ui-mockups.md
-├── Design System Foundation
-│   ├── Color Palette (with hex codes and usage)
-│   ├── Typography Scale (with Material-UI variants)
-│   ├── Spacing System (8px grid system)
-│   └── Component Library Reference
-├── Core Page Mockups
-│   ├── Landing Page (with CTAs and conversion flows)
-│   ├── Authentication Flow (login/signup/forgot password)
-│   ├── Dashboard (personalized and empty states)
-│   ├── Learning Paths (with progress tracking)
-│   ├── Government Schemes (with filtering and details)
-│   └── Community Forum (with posting and interaction flows)
-├── Component State Variations
-│   ├── Form States (default, focus, error, success)
-│   ├── Button States (default, hover, active, disabled)
-│   ├── Loading States (skeleton screens, spinners)
-│   └── Empty States (no data, no results, errors)
-├── Responsive Design Patterns
-│   ├── Desktop Layouts (1200px+)
-│   ├── Tablet Layouts (768px-1199px)
-│   └── Mobile Layouts (320px-767px)
-└── Indian Context Specifications
-    ├── Currency Display Patterns
-    ├── Government Scheme Layouts
-    ├── Multilingual Support Indicators
-    └── Cultural Design Elements
+ui-mockups.md (Enhanced with Digital India Theme)
+├── Digital India Theme Foundation
+│   ├── Color System (Deep Blue #1565C0 + Digital India Orange #FF6B35)
+│   ├── Typography Scale (Inter, Poppins, Noto Sans Devanagari)
+│   ├── Spacing System (8px grid with Indian context)
+│   ├── Animation Framework (Framer Motion integration)
+│   └── Component Library (Material-UI with Digital India overrides)
+├── Page Layout Specifications
+│   ├── Landing Page (Digital grid backgrounds, tech-inspired hero)
+│   ├── Dashboard (Indian context widgets, government scheme cards)
+│   ├── Learning Paths (Progress animations, cultural completion badges)
+│   ├── Government Schemes (Official styling, deadline indicators)
+│   ├── Community Forum (Regional tags, reputation systems)
+│   └── Profile Pages (Achievement displays, compliance indicators)
+├── Component State Systems
+│   ├── Button Variants (Digital India themed states and animations)
+│   ├── Form Components (Validation with cultural iconography)
+│   ├── Navigation Elements (Header/footer with Indian branding)
+│   ├── Data Display (Tables, cards with government styling)
+│   └── Interactive States (Loading, empty, error, success)
+├── Animation and Interaction Patterns
+│   ├── Page Transitions (Smooth, tech-inspired movements)
+│   ├── Component Animations (Hover effects, micro-interactions)
+│   ├── Progress Animations (Celebration elements, cultural context)
+│   └── Scroll Effects (Parallax, fade-in, sticky behaviors)
+├── Responsive Design Specifications
+│   ├── Desktop Layouts (1200px+, full feature sets)
+│   ├── Tablet Layouts (768px-1199px, collapsed navigation)
+│   ├── Mobile Layouts (320px-767px, thumb-friendly interactions)
+│   └── Progressive Enhancement (Mobile-first approach)
+└── Indian Context Integration
+    ├── Government Interface Styling (Official branding, trust indicators)
+    ├── Cultural Design Elements (Respectful symbol usage, festivals)
+    ├── Multi-language Support (Hindi/English, script mixing)
+    ├── Regional Customization (State-specific elements)
+    └── Currency and Legal Formatting (₹ symbol, Indian regulations)
 ```
 
-### Design System Enhancement
+### Digital India Design System Architecture
 
-The enhanced mockups will include:
+The enhanced mockups will implement a comprehensive design system with:
 
-1. **Precise Spacing Specifications**: Using Material-UI's 8px grid system
-2. **Component Mapping**: Direct correlation to Material-UI components
-3. **State Management**: Visual representation of all interactive states
-4. **Accessibility Indicators**: WCAG compliance markers and focus states
+1. **Digital India Color System**: Deep Blue (#1565C0) and Digital India Orange (#FF6B35) with semantic color mappings
+2. **Typography Hierarchy**: Modern tech fonts (Inter, Poppins) with Hindi support (Noto Sans Devanagari)
+3. **Component State Management**: Comprehensive interactive states with smooth animations
+4. **Animation Framework**: Framer Motion integration with performance-optimized transitions
+5. **Responsive Patterns**: Mobile-first approach with progressive enhancement
+6. **Indian Context Integration**: Cultural elements, government styling, and regional considerations
+7. **Accessibility Standards**: WCAG 2.1 AA compliance with inclusive design principles
+
+#### Digital India Color System
+```typescript
+interface DigitalIndiaColorSystem {
+  primary: {
+    main: '#1565C0';        // Deep Blue - Trust & Professionalism
+    light: '#5E92F3';       // Lighter blue for hover states
+    dark: '#003C8F';        // Darker blue for active states
+    contrastText: '#FFFFFF'; // White text on blue backgrounds
+  };
+  secondary: {
+    main: '#FF6B35';        // Digital India Orange - Energy & Innovation
+    light: '#FF9A66';       // Lighter orange for hover states
+    dark: '#C73E02';        // Darker orange for active states
+    contrastText: '#FFFFFF'; // White text on orange backgrounds
+  };
+  accent: {
+    teal: '#00695C';        // Growth & Stability
+    saffron: '#FF9933';     // Indian Identity & Energy
+    success: '#388E3C';     // Success states
+    warning: '#F57C00';     // Warning states
+    error: '#D32F2F';       // Error states
+  };
+  background: {
+    default: '#FAFAFA';     // Light grey background
+    paper: '#FFFFFF';       // White surface
+    digital: '#F8FAFF';     // Subtle blue tint for digital sections
+  };
+}
+```
 
 ## Components and Interfaces
 

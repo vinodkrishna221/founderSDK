@@ -1,12 +1,12 @@
 # Product Overview
 
-## Founder's Compass: India's Startup Playbook
+## BuilderBase: India's Startup Playbook
 
 A comprehensive online platform designed to demystify the startup journey within the unique Indian ecosystem. It serves as a single source of truth for Indian entrepreneurs, guiding them step-by-step through local regulations, compliance, leveraging government schemes, and overcoming India-specific market challenges.
 
 ## Purpose
 
-To become the #1 private-sector resource for aspiring Indian entrepreneurs by providing structured education, practical tools, and compliance/funding resources in a single, cohesive platform.
+To become the #1 private-sector resource for aspiring Indian entrepreneurs by providing structured education, practical tools, and compliance/funding resources in a single, cohesive platform with Digital India theme integration.
 
 ## Target Users
 
@@ -22,20 +22,32 @@ To become the #1 private-sector resource for aspiring Indian entrepreneurs by pr
 - Indian nationals, tech-literate, multilingual
 - Highly motivated but navigating complex family and societal expectations
 
-## Core Features (12 Main Capabilities)
+## Core Features (4 Main Modules)
 
-1. **India-Specific Learning Paths** - Guided modules for Indian business processes
-2. **Comprehensive Knowledge Base** - Searchable wiki on Indian laws and compliance
-3. **Government Scheme Locator** - Interactive tool for finding relevant schemes and grants
-4. **Template & Resource Library** - India-specific documents and forms
-5. **Interactive Compliance Checklists** - Step-by-step process guides
-6. **State-wise Startup Policy Guide** - Comparative database of state policies
-7. **India-Centric Funding Database** - Curated list of Indian VCs and Angel Networks
-8. **Community Q&A Forum** - Region-specific founder discussions
-9. **Case Study Library** - Analysis of Indian startup successes and failures
-10. **Monetization Model Simulator** - Revenue projections in INR
-11. **Personalized Dashboard** - Progress tracking and saved resources
-12. **Expert Directory** - Vetted Indian CAs, CSs, and startup lawyers
+### **Module 1: Knowledge Core**
+- **India-Specific Learning Paths** - Guided modules for Indian business processes
+- **Comprehensive Knowledge Base** - Searchable wiki on Indian laws and compliance
+- **Case Study Library** - Analysis of Indian startup successes and failures
+
+### **Module 2: User Core Dashboard**
+- **Personalized Dashboard** - Progress tracking and saved resources with Digital India theme
+- **Achievement System** - Milestone tracking and cultural celebrations
+- **Unified Progress Tracking** - Cross-module integration and analytics
+
+### **Module 3: Founder's Toolkit**
+- **Template & Resource Library** - India-specific documents and forms with premium gating
+- **Interactive Compliance Checklists** - Step-by-step process guides with cultural context
+- **Monetization Model Simulator** - Revenue projections in INR with Indian market focus
+
+### **Module 4: Government Scheme & Policy Navigator**
+- **Government Scheme Locator** - Curated and real-time scheme discovery with official styling
+- **State-wise Startup Policy Guide** - Comparative database with visual comparison tools
+- **Application Tracking System** - Progress monitoring with government portal integration
+
+### **Additional Features**
+- **Community Q&A Forum** - Region-specific founder discussions
+- **Expert Directory** - Vetted Indian CAs, CSs, and startup lawyers
+- **India-Centric Funding Database** - Curated list of Indian VCs and Angel Networks
 
 ## Business Model
 

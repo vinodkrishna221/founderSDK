@@ -11,28 +11,31 @@
 
 ## Recommended Tech Stack
 
-### Frontend
-- **Next.js with TypeScript** - Full-stack React framework for SEO and performance
-- **Material-UI (MUI)** - React component library with Material Design
-- **MUI X** - Advanced components (DataGrid, DatePicker, etc.)
-- **Emotion** - CSS-in-JS styling (comes with MUI)
-- **React Query/TanStack Query** - Data fetching and caching
-- **Framer Motion** - Smooth animations and interactions
+### Frontend (Digital India Theme)
+- **Next.js with TypeScript** - Full-stack React framework optimized for Indian users
+- **Material-UI (MUI)** - React component library with Digital India theme customizations
+- **MUI X** - Advanced components (DataGrid, DatePicker) with Indian formatting
+- **Emotion** - CSS-in-JS styling with Digital India color system
+- **React Query/TanStack Query** - Data fetching optimized for Indian connectivity
+- **Framer Motion** - Smooth animations with Digital India themed transitions
+- **React Hook Form** - Form handling with Hindi/English validation support
 
 ### Backend
-- **Node.js with Express** or **Next.js API Routes** - JavaScript ecosystem consistency
-- **Prisma ORM** - Type-safe database operations
-- **NextAuth.js** - Authentication with multiple providers
+- **Next.js API Routes** - Full-stack JavaScript ecosystem consistency
+- **Supabase** - Backend-as-a-Service with PostgreSQL, authentication, and real-time features
+- **NextAuth.js** - Authentication with multiple providers integrated with Supabase
 
 ### Database
-- **PostgreSQL** - Relational data for structured content and user management
-- **Redis** - Caching and session management
-- **Full-text search** - For knowledge base and resource search
+- **Supabase PostgreSQL** - Managed PostgreSQL with real-time subscriptions
+- **Supabase Storage** - File storage with CDN for templates and resources
+- **Redis** - Additional caching layer for government scheme data
+- **Full-text search** - Built-in PostgreSQL search for knowledge base
 
 ### India-Specific Integrations
 - **Indian Payment Gateways**: Razorpay, PayU, or Paytm for UPI, Netbanking support
 - **SMS/WhatsApp APIs**: For Indian mobile communication preferences
-- **Government API Integration**: For real-time scheme updates where available
+- **Government Data Integration**: Data.gov.in API, web scraping, and RSS monitoring
+- **Curated Government Schemes**: Manual curation of top 20 popular schemes for accuracy
 
 ## Development Tools
 
@@ -62,8 +65,8 @@ npm run dev
 npm install
 
 # Database operations
-npx prisma migrate dev
-npx prisma studio
+npx supabase db reset
+npx supabase db push
 ```
 
 ### Testing
@@ -92,11 +95,14 @@ vercel --prod
 
 ### Content Management
 ```bash
-# Update government schemes data
-npm run update-schemes
+# Update curated government schemes
+npm run update-curated-schemes
 
-# Sync state policies
-npm run sync-policies
+# Sync government data from APIs
+npm run sync-government-data
+
+# Monitor RSS feeds for updates
+npm run monitor-government-feeds
 ```
 
 ## Special Requirements
@@ -124,15 +130,37 @@ npm run sync-policies
 
 ## UI Design System
 
-### Material-UI Theme Configuration
-- **Custom color palette** reflecting Indian startup ecosystem
-- **Typography** optimized for multilingual content
-- **Responsive breakpoints** for mobile-first design
-- **Dark/Light mode** support for user preference
+### Digital India Material-UI Theme Configuration
+- **Digital India Color Palette**: Deep Blue (#1565C0) + Digital India Orange (#FF6B35)
+- **Typography**: Inter (primary), Poppins (secondary), Noto Sans Devanagari (Hindi)
+- **Animation Integration**: Framer Motion with Digital India themed transitions
+- **Responsive Breakpoints**: Mobile-first (320px+), Tablet (768px+), Desktop (1200px+)
+- **Component Overrides**: Custom variants for Indian-specific elements
+- **Accessibility**: WCAG 2.1 AA compliance with cultural context
 
-### Key UI Components
-- **Navigation**: App Bar with drawer navigation for mobile
-- **Cards**: Material Cards for content organization
-- **Data Display**: Tables, Lists, and Grids for structured information
-- **Forms**: Text Fields, Select, Autocomplete with validation
-- **Feedback**: Snackbars, Dialogs, Progress indicators
+### Digital India UI Components
+- **Navigation**: App Bar with Digital India branding, drawer navigation with cultural icons
+- **Cards**: Material Cards with hover animations, government scheme styling
+- **Data Display**: Tables with ₹ currency formatting, Lists with Indian context
+- **Forms**: Text Fields with Hindi/English support, validation with cultural iconography
+- **Feedback**: Snackbars with Digital India colors, Progress indicators with celebrations
+- **Government Elements**: Official styling components, compliance indicators, trust badges
+
+## Government Data Management Strategy
+
+### Efficient Hybrid Approach
+- **Phase 1**: Curated data with top 20 popular government schemes (manual curation)
+- **Phase 2**: Data.gov.in API integration for additional scheme data
+- **Phase 3**: Respectful web scraping for major government portals
+- **Phase 4**: RSS feed monitoring for real-time updates
+
+### Data Sources Priority
+1. **Curated Schemes** (Highest accuracy) - Manually verified top schemes
+2. **Data.gov.in API** (Official government API) - Supplementary data
+3. **Web Scraping** (Fallback) - For portals without APIs
+4. **RSS Monitoring** (Updates) - For scheme announcements
+
+### Caching Strategy
+- **24-hour cache** for API results to reduce external calls
+- **Real-time updates** for user interactions and saved schemes
+- **Popular scheme tracking** to identify curation candidates

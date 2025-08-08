@@ -1,23 +1,29 @@
-# UI Mockups for Founder's Compass
+# UI Mockups for BuilderBase
 
 ## Design System Overview
 
-### Color Palette
+### Digital India Startup Theme Color Palette
 - Primary: #1565C0 (Deep Blue) - Trust & Professionalism
-- Secondary: #FF9933 (Saffron) - Indian Identity & Energy  
+- Secondary: #FF6B35 (Digital India Orange) - Energy & Innovation
 - Accent: #00695C (Teal) - Growth & Stability
+- Saffron: #FF9933 (Indian Identity & Energy)
 - Background: #FAFAFA (Light Grey)
 - Surface: #FFFFFF (White)
+- Digital: #F8FAFF (Subtle blue tint for digital sections)
 - Error: #D32F2F (Red)
 - Success: #388E3C (Green)
 - Warning: #F57C00 (Orange)
 
-### Typography Scale
-- H1: 48px Bold (Page Titles)
-- H2: 36px Bold (Section Headers)
-- H3: 24px Medium (Card Titles)
-- Body: 16px Regular (Content)
-- Caption: 14px Regular (Meta info)
+### Digital India Typography Scale
+- Font Families: Inter (primary), Poppins (secondary), Noto Sans Devanagari (Hindi)
+- H1: 48px Bold (Page Titles) - Inter, 700 weight
+- H2: 36px Bold (Section Headers) - Inter, 700 weight
+- H3: 24px Medium (Card Titles) - Inter, 500 weight
+- H4: 20px Medium (Subsection Headers) - Inter, 500 weight
+- Body1: 16px Regular (Primary Content) - Inter, 400 weight
+- Body2: 14px Regular (Secondary Content) - Inter, 400 weight
+- Caption: 12px Regular (Meta info) - Inter, 400 weight
+- Hindi Text: Noto Sans Devanagari with proper spacing and line height
 
 ## 1. Landing Page Mockup
 
@@ -25,7 +31,7 @@
 ┌─────────────────────────────────────────────────────────────────────────────────┐
 │ HEADER (White background)                                                       │
 ├─────────────────────────────────────────────────────────────────────────────────┤
-│ [🧭] Founder's Compass    Learning  Resources  Community  Schemes  [Login] [Sign Up] │
+│ [🧭] BuilderBase    Learning  Resources  Community  Schemes  [Login] [Sign Up] │
 ├─────────────────────────────────────────────────────────────────────────────────┤
 │ ████████████████████████████████████████████████████████████████████████████████ │ ← Saffron accent line
 └─────────────────────────────────────────────────────────────────────────────────┘
@@ -37,15 +43,22 @@
 │  LEFT COLUMN (60%)                    │  RIGHT COLUMN (40%)                     │
 │                                       │                                         │
 │  India's Complete                     │  ┌─────────────────────────────────┐   │
-│  🟠 Startup Playbook                  │  │ Quick Start Checklist          │   │
-│                                       │  │ (Blue background, white text)   │   │
-│  Navigate Indian regulations, access  │  │                                 │   │
-│  government schemes, and build your   │  │ ✓ Company Registration Guide   │   │
-│  startup with confidence.             │  │ ✓ GST & Tax Setup              │   │
-│                                       │  │ ✓ Government Scheme Access     │   │
-│  [🚀 Start Your Journey] [▶ Demo]     │  │                                 │   │
-│                                       │  └─────────────────────────────────┘   │
-│  ✅ Free to start • No credit card    │                                         │
+│  🟠 Digital Startup Playbook         │  │ Quick Start Checklist          │   │
+│  (H1, Deep Blue #1565C0, 48px)       │  │ (Card, elevation: 3, blue bg)  │   │
+│                                       │  │                                 │   │
+│  Navigate Indian regulations, access  │  │ ✓ Company Registration Guide   │   │
+│  government schemes, and build your   │  │ ✓ GST & Tax Setup              │   │
+│  startup with AI-powered guidance.    │  │ ✓ Government Scheme Access     │   │
+│  (Body1, 16px, grey.700)             │  │ ✓ Digital India Integration     │   │
+│                                       │  │                                 │   │
+│  [🚀 Start Your Journey]              │  │ [📱 Download Mobile App]       │   │
+│  (Primary button, Digital India       │  │ (Secondary button, outlined)    │   │
+│   Orange #FF6B35 bg)                  │  │                                 │   │
+│  [▶ Watch Demo]                       │  │                                 │   │
+│  (Text button, Deep Blue #1565C0)     │  │                                 │   │
+│                                       │  │                                 │   │
+│  ✅ Free to start • No credit card    │  │                                 │   │
+│  (Caption, success color)             │  │                                 │   │
 │                                       │                                         │
 └─────────────────────────────────────────────────────────────────────────────────┘
 
@@ -54,12 +67,14 @@
 ├─────────────────────────────────────────────────────────────────────────────────┤
 │                                                                                 │
 │  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐           │
-│  │ 📚 Learning │  │ 🏛️ Schemes  │  │ 📄 Templates│  │ 👥 Community│           │
-│  │ Paths       │  │ Locator     │  │ Library     │  │ Forum       │           │
-│  │             │  │             │  │             │  │             │           │
-│  │ Step-by-step│  │ Find govt   │  │ India-spec  │  │ Connect with│           │
-│  │ guides for  │  │ schemes &   │  │ documents & │  │ founders &  │           │
-│  │ Indian regs │  │ grants      │  │ templates   │  │ get advice  │           │
+│  │ 🤖 AI Guide │  │ 🏛️ Schemes  │  │ � TMobile   │  │ 🌐 Community│           │
+│  │ (Card hover │  │ Locator     │  │ First       │  │ Network     │           │
+│  │ animation)  │  │             │  │             │  │             │           │
+│  │             │  │ Find govt   │  │ Access on   │  │ Connect with│           │
+│  │ AI-powered  │  │ schemes &   │  │ any device  │  │ 50,000+     │           │
+│  │ guidance    │  │ grants with │  │ with offline│  │ founders    │           │
+│  │ tailored    │  │ real-time   │  │ support     │  │ across India│           │
+│  │ for India   │  │ updates     │  │             │  │             │           │
 │  └─────────────┘  └─────────────┘  └─────────────┘  └─────────────┘           │
 │                                                                                 │
 └─────────────────────────────────────────────────────────────────────────────────┘
@@ -74,8 +89,8 @@
 │                                                                                 │
 │ SIDEBAR (280px)          │ MAIN CONTENT AREA                                    │
 │ ┌─────────────────────┐  │                                                      │
-│ │ [🧭] Founder's      │  │ ┌──────────────────────────────────────────────────┐ │
-│ │     Compass         │  │ │ Welcome back, Priya! 👋                          │ │
+│ │ [🧭] BuilderBase    │  │ ┌──────────────────────────────────────────────────┐ │
+│ │                     │  │ │ Welcome back, Priya! 👋                          │ │
 │ │                     │  │ │ (Blue background, white text)                    │ │
 │ │ 🏠 Dashboard    ●   │  │ │                                                  │ │
 │ │ 📚 Learning Paths③  │  │ │ You're 60% through your startup registration    │ │
@@ -287,7 +302,7 @@
 ┌─────────────────────────┐
 │ MOBILE DASHBOARD        │
 ├─────────────────────────┤
-│ ☰ [🧭] Founder's Compass│
+│ ☰ [🧭] BuilderBase│
 │ ████████████████████████│ ← Saffron line
 │                         │
 │ Welcome back, Priya! 👋 │
@@ -340,23 +355,63 @@
 └─────────────────────────┘
 ```
 
-## Design Principles Summary
+## Digital India Theme Specifications
+
+### Animation Framework
+- **Page Transitions**: 500ms ease-out fade effects, 600ms cubic-bezier slide animations
+- **Component Animations**: 150ms ease-out button hovers, 300ms cubic-bezier card lifts
+- **Micro-interactions**: Click ripples with Digital India colors, smooth state transitions
+- **Progress Animations**: Gradient fills, completion celebrations with cultural elements
+- **Scroll Effects**: Parallax backgrounds, fade-in on scroll with staggered timing
+
+### Material-UI Theme Configuration
+```typescript
+const digitalIndiaTheme = {
+  palette: {
+    primary: { main: '#1565C0', light: '#5E92F3', dark: '#003C8F' },
+    secondary: { main: '#FF6B35', light: '#FF9A66', dark: '#C73E02' },
+    accent: { teal: '#00695C', saffron: '#FF9933' },
+    background: { default: '#FAFAFA', paper: '#FFFFFF', digital: '#F8FAFF' }
+  },
+  typography: {
+    fontFamily: '"Inter", "Roboto", "Helvetica", "Arial", sans-serif',
+    h1: { fontSize: '3rem', fontWeight: 700, lineHeight: 1.2 },
+    h2: { fontSize: '2.25rem', fontWeight: 700, lineHeight: 1.3 }
+  },
+  spacing: 8 // 8px grid system
+}
+```
+
+### Component State Specifications
+- **Buttons**: Default (elevation: 0), Hover (elevation: 2, translateY: -1px), Active (elevation: 1)
+- **Cards**: Default (elevation: 1), Hover (elevation: 4, translateY: -2px), Selected (border: primary)
+- **Forms**: Focus (border: primary, boxShadow: rgba(21,101,192,0.2)), Error (border: error, boxShadow: rgba(211,47,47,0.2))
+
+### Digital India Visual Elements
+- **Background Patterns**: Digital grid overlays, circuit board inspired patterns, geometric shapes
+- **Gradients**: Blue-to-orange transitions, subtle background washes, accent applications
+- **Icons**: Digital India inspired iconography, government symbols, tech startup icons
+- **Cultural Elements**: Respectful Indian symbols, festival theming, traditional motifs adapted for digital
+
+### Design Principles Summary
 
 ### Visual Hierarchy
-- **Primary Actions**: Blue buttons with high contrast
-- **Secondary Actions**: Outlined buttons or text links  
-- **Success States**: Green indicators and checkmarks
-- **Warning/Attention**: Saffron/orange highlights
-- **Information**: Teal accents for neutral info
+- **Primary Actions**: Deep Blue (#1565C0) buttons with high contrast and elevation
+- **Secondary Actions**: Digital India Orange (#FF6B35) outlined buttons or text links  
+- **Success States**: Green indicators with celebration animations
+- **Warning/Attention**: Saffron/orange highlights with cultural context
+- **Information**: Teal accents for neutral info with tech-inspired styling
 
-### Accessibility
-- **Minimum touch targets**: 44px for mobile interactions
-- **Color contrast**: WCAG AA compliant ratios
-- **Typography**: Readable font sizes (16px+ for body text)
-- **Focus indicators**: Clear keyboard navigation support
+### Accessibility & Performance
+- **WCAG 2.1 AA Compliance**: Proper contrast ratios, keyboard navigation, screen reader support
+- **Touch Targets**: Minimum 44px for mobile interactions with thumb-friendly design
+- **Typography**: Readable font sizes (16px+ for body text) with Hindi/English support
+- **Focus Indicators**: Clear keyboard navigation with Digital India color transitions
+- **Performance**: 60fps animations, optimized for Indian device capabilities
 
-### Indian Context
-- **Currency**: Always display ₹ symbol for Indian Rupees
-- **Language**: Support for Hindi/regional language toggles
-- **Cultural colors**: Saffron, white, green reflecting Indian identity
-- **Government branding**: Respectful use of official colors/symbols
+### Indian Context Integration
+- **Currency**: Always display ₹ symbol with proper Indian number formatting (lakhs, crores)
+- **Language**: Hindi/English script mixing with Noto Sans Devanagari support
+- **Cultural Colors**: Respectful use of saffron, white, green reflecting Indian identity
+- **Government Branding**: Official styling for schemes with trust indicators
+- **Regional Elements**: State-specific color coding, map visualizations, cultural sensitivity
