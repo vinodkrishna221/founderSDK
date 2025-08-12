@@ -1,0 +1,242 @@
+/**
+ * Digital India Typography System - Font Definitions
+ * Optimized font loading with proper fallbacks and display strategies
+ */
+
+/* Inter Font Family - Primary UI Font */
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/inter-400.woff2') format('woff2'),
+       url('/fonts/inter-400.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/inter-500.woff2') format('woff2'),
+       url('/fonts/inter-500.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/inter-600.woff2') format('woff2'),
+       url('/fonts/inter-600.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/inter-700.woff2') format('woff2'),
+       url('/fonts/inter-700.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Poppins Font Family - Secondary/Display Font */
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/poppins-400.woff2') format('woff2'),
+       url('/fonts/poppins-400.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/poppins-500.woff2') format('woff2'),
+       url('/fonts/poppins-500.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/poppins-600.woff2') format('woff2'),
+       url('/fonts/poppins-600.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/poppins-700.woff2') format('woff2'),
+       url('/fonts/poppins-700.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Noto Sans Devanagari - Hindi/Devanagari Script Support */
+@font-face {
+  font-family: 'Noto Sans Devanagari';
+  src: url('/fonts/noto-sans-devanagari-400.woff2') format('woff2'),
+       url('/fonts/noto-sans-devanagari-400.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+
+@font-face {
+  font-family: 'Noto Sans Devanagari';
+  src: url('/fonts/noto-sans-devanagari-500.woff2') format('woff2'),
+       url('/fonts/noto-sans-devanagari-500.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+
+@font-face {
+  font-family: 'Noto Sans Devanagari';
+  src: url('/fonts/noto-sans-devanagari-600.woff2') format('woff2'),
+       url('/fonts/noto-sans-devanagari-600.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+
+@font-face {
+  font-family: 'Noto Sans Devanagari';
+  src: url('/fonts/noto-sans-devanagari-700.woff2') format('woff2'),
+       url('/fonts/noto-sans-devanagari-700.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+
+/* Fira Code - Technical/Monospace Font */
+@font-face {
+  font-family: 'Fira Code';
+  src: url('/fonts/fira-code-400.woff2') format('woff2'),
+       url('/fonts/fira-code-400.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  font-feature-settings: 'calt' 1, 'liga' 1;
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  src: url('/fonts/fira-code-500.woff2') format('woff2'),
+       url('/fonts/fira-code-500.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  font-feature-settings: 'calt' 1, 'liga' 1;
+}
+
+/* Font Loading Optimization */
+.font-loading {
+  font-family: system-ui, -apple-system, sans-serif;
+  visibility: hidden;
+}
+
+.fonts-loaded .font-loading {
+  visibility: visible;
+}
+
+/* Typography Base Styles */
+html {
+  font-family: 'Inter', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Ensure proper text rendering across browsers */
+* {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Hindi text specific optimizations */
+[lang="hi"],
+.hindi-text {
+  font-family: 'Noto Sans Devanagari', 'Inter', 'Roboto', sans-serif;
+  line-height: 1.8;
+  letter-spacing: 0.01em;
+}
+
+/* Technical content optimizations */
+code,
+pre,
+.technical-text {
+  font-family: 'Fira Code', 'Monaco', 'Consolas', 'Courier New', monospace;
+  font-feature-settings: 'calt' 1, 'liga' 1;
+  line-height: 1.6;
+}
+
+/* Responsive font size adjustments */
+@media (max-width: 1199px) {
+  html {
+    font-size: 15px; /* Slightly smaller base font size for tablets */
+  }
+}
+
+@media (max-width: 767px) {
+  html {
+    font-size: 16px; /* Maintain 16px minimum for mobile accessibility */
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  * {
+    font-weight: 600 !important;
+    text-shadow: none !important;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+/* Print styles */
+@media print {
+  * {
+    font-family: 'Times New Roman', serif !important;
+    color: black !important;
+    background: white !important;
+  }
+  
+  [lang="hi"],
+  .hindi-text {
+    font-family: 'Noto Sans Devanagari', 'Times New Roman', serif !important;
+  }
+}
+
+/* Font loading performance optimizations */
+.critical-font-preload {
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.secondary-font-preload {
+  font-family: 'Poppins', 'Inter', system-ui, sans-serif;
+}
+
+.hindi-font-preload {
+  font-family: 'Noto Sans Devanagari', system-ui, sans-serif;
+}
+
+.technical-font-preload {
+  font-family: 'Fira Code', 'Courier New', monospace;
+}
